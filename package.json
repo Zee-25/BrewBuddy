@@ -1,0 +1,19 @@
+{
+  "name": "brewbuddy",
+  "version": "1.0.0",
+  "description": "Coffee Shops Application",
+  "main": "server/server.js",
+ "scripts": {
+  "start": "node server/server.js",
+  "build:css": "npx postcss-cli public/styles/tailwind.css -o public/styles/output.css"
+},
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^2.2.19"
+  }
+}

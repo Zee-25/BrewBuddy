@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Tracker</title>
+  <link rel="stylesheet" href="styles/output.css">
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+  
+
+  <div id="navbar"></div>
+
+
+  <div class="container mx-auto mt-8 p-6">
+    <h1 class="text-3xl font-bold mb-4 text-center text-amber-500">Coffee Tracker</h1>
+    
+
+    <p class="text-lg mb-6">Keep track of your daily coffee intake and stay mindful of your caffeine consumption.</p>
+    
+  
+    <form id="tracker-form" class="space-y-4">
+        <div>
+          <label for="date" class="block text-sm font-medium text-amber-400">Date:</label>
+          <input type="date" id="date" name="date" class="p-2 w-full border border-gray-300 rounded-md bg-gray-50 text-gray-800">
+        </div>
+        <div>
+          <label for="coffee-type" class="block text-sm font-medium text-amber-400">Type of Coffee:</label>
+          <input type="text" id="coffee-type" name="coffee-type" placeholder="e.g., Espresso" class="p-2 w-full border border-gray-300 rounded-md bg-gray-50 text-gray-800">
+        </div>
+        <div>
+          <label for="cups" class="block text-sm font-medium text-amber-400">Number of Cups:</label>
+          <input type="number" id="cups" name="cups" min="1" class="p-2 w-full border border-gray-300 rounded-md bg-gray-50 text-gray-800">
+        </div>
+        <button type="submit" class="w-full bg-white">Add Entry</button>
+      </form>
+
+ 
+    <div id="tracker-log" class="mt-8">
+      <h2 class="text-2xl font-semibold mb-4 text-amber-500">Your Coffee Log</h2>
+      
+      <ul id="log-entries" class="space-y-2">
+       
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="bg-gray-800 text-white p-4 text-center mt-auto">
+    &copy; 2024 BrewBuddy. All rights reserved.
+  </footer>
+
+  <script src="scripts/tracker.js"></script>
+  <script src="scripts/navbar.js"></script>
+</body>
+</html>

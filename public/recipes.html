@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Recipe</title>
+    <link rel="stylesheet" href="styles/output.css">
+</head>
+<body class="bg-brown-50 flex flex-col min-h-screen">
+    <div id="navbar"></div>
+
+    <div class="flex-grow p-4 md:p-8">
+        <h1 id="form-title" class="text-2xl md:text-3xl font-bold mb-4 text-coffee">Submit a Recipe</h1>
+        <form id="submit-recipe-form" class="bg-white p-6 rounded-lg shadow-md">
+            <input type="hidden" id="editMode" value="false">
+            <input type="hidden" id="editIndex" value="">
+
+            <label for="recipe-title" class="block mb-2 font-semibold">Recipe Title:</label>
+            <input type="text" id="recipe-title" class="w-full p-2 border border-gray-300 rounded-md mb-4" placeholder="Enter recipe title" required>
+
+            <label for="ingredients" class="block mb-2 font-semibold">Ingredients:</label>
+            <textarea id="ingredients" class="w-full p-2 border border-gray-300 rounded-md mb-4" placeholder="Enter ingredients" required></textarea>
+
+            <label for="instructions" class="block mb-2 font-semibold">Instructions:</label>
+            <textarea id="instructions" class="w-full p-2 border border-gray-300 rounded-md mb-4" placeholder="Enter instructions" required></textarea>
+
+            <label for="recipe-image" class="block mb-2 font-semibold">Upload Image (Optional):</label>
+            <input type="file" id="recipe-image" class="w-full p-2 mb-4" accept="image/*">
+
+            <button type="submit" class="bg-coffee text-white px-4 py-2 rounded-md">Submit Recipe</button>
+        </form>
+
+        <h2 class="text-xl font-bold mt-8 mb-4">Submitted Recipes</h2>
+        <div id="recipes-section" class="bg-white p-4 rounded-lg shadow-md"></div>
+    </div>
+
+    <footer class="bg-brown-800 text-white p-4 text-center">
+        &copy; 2024 BrewBuddy. All rights reserved.
+    </footer>
+
+    <script src="scripts/recipes.js"></script>
+    <script src="scripts/navbar.js"></script>
+</body>
+</html>

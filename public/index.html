@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My List</title>
+  <link rel="stylesheet" href="styles/output.css">
+</head>
+<body class="bg-brown-50 flex flex-col min-h-screen">
+  <div id="navbar"></div>
+
+  <div class="flex-grow p-4 md:p-8">
+    <h1 class="text-2xl md:text-3xl font-bold mb-4 text-coffee">Welcome to BrewBuddy!</h1>
+    <p class="mb-4">Here you can manage your coffee shop list and reviews.</p>
+
+
+    <input type="text" id="search-bar" placeholder="Search for coffee shops..." class="p-2 mb-4 border border-coffee rounded-md w-full md:w-1/2">
+
+
+    <div class="mb-4 flex flex-col md:flex-row md:items-center">
+      <select id="filter-rating" class="p-2 border border-coffee rounded-md mb-2 md:mb-0">
+        <option value="">Filter by rating</option>
+        <option value="1">1 Star</option>
+        <option value="2">2 Stars</option>
+        <option value="3">3 Stars</option>
+        <option value="4">4 Stars</option>
+        <option value="5">5 Stars</option>
+      </select>
+
+      <select id="sort-options" class="p-2 border border-coffee rounded-md md:ml-4">
+        <option value="date-desc">Sort by Date (Newest)</option>
+        <option value="date-asc">Sort by Date (Oldest)</option>
+        <option value="rating-desc">Sort by Rating (Highest)</option>
+        <option value="rating-asc">Sort by Rating (Lowest)</option>
+      </select>
+    </div>
+
+    <div id="reviews-section">
+   
+    </div>
+  </div>
+
+  <footer class="bg-brown-800 text-white p-4 text-center">
+    &copy; 2024 BrewBuddy. All rights reserved.
+  </footer>
+
+  <script src="scripts/index.js"></script>
+  <script src="scripts/navbar.js"></script>
+</body>
+</html>
