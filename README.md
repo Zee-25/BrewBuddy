@@ -9,8 +9,6 @@
 - [Usage](#usage)
 - [File Structure](#file-structure)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -45,6 +43,7 @@ Submit Reviews: Share your experience at different coffee shops.
 Manage Recipes: Create, edit, and delete coffee-related recipes.
 
 ## File Structure
+```plaintext
 BrewBuddy/
 │
 ├── public/
@@ -73,6 +72,8 @@ BrewBuddy/
 │
 ├── postcss.config.js            # PostCSS configuration
 └── tailwind.config.js           # Tailwind CSS configuration
+
+```
 
 ## Technologies Used
 
